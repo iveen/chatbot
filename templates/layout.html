@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head >
+  
+  <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- <i class="glyphicon glyphicon-info-sign" data-placement="left" data-html="true" data-title="Hey, <br/> this is tool tip" rel="tooltip"></i> -->
+    <!-- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" /> -->
+    <!-- <meta name="theme-color" content="#999999" /> -->
+    
+    <title style="font-weight: bold!important;font-family: roboto!important;">XBS IT Support Assistant</title>
+    <!-- <title>&#6158;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HR BUDDY - Virtual assistant for GEMS related queries</title> -->
+
+    <!-- <a href="example.com" data-title="My site"> Link </a> with styled tooltip (bigger and with a different background color, as requested in the question)<br/> -->
+
+    <link rel="shortcut icon" type="image/x-icon" href="static\CSS\HRBUDDY.ico" />
+    
+    <!-- <script>
+      function myFunction() {
+        document.title = "Some new title text";
+      }
+      </script> -->
+    <!-- <link rel="stylesheet" type="text/CSS" href="static\CSS\chat_interface.css" /> -->
+
+    <!-- <meta name="viewport" content="width=600"> -->
+    <!-- viewportElement.setAttribute( 'content', 'initial-scale=' + ratio ); -->
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    {% block header %}{% endblock %}
+</head>
+
+<body >
+    <style>
+    
+      .header h3 {
+        /* float: ; */
+        /* float: right; */
+        /* position: relative; */
+        /* align-content: center; */
+        /* top: 4px; */
+        /* left: 10px; */
+        text-align: center;
+        margin-top:10px;
+        /* font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+        font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; */
+        font-family: Arial, Helvetica, sans-serif;
+      } 
+      </style>
+
+
+
+    <div class="header">
+        <!-- <h3 style="font-weight: bolder;color:white;font-size: 25px;">xerox - HR BUDDY</h3> -->
+        <p> </p>
+      </div>
+
+
+      
+    <!-- <h3 align = "center" style="font-weight: bold;">HR Buddy</h1> -->
+         
+     <!-- <h1 align="center" >GEMS Chatbot  GEMS Chatbot</h1> -->
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+    <footer>
+        {% block other_footers %}{% endblock %}
+    </footer>
+
+</html>
